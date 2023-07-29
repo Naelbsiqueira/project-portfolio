@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Tektur:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+/*HEADER*/
+header {
+  background-color:#000;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header h1 {
+  color: rgb(41, 223, 223);
+  font-size: 4rem;
+}
+header span {
+  color: #fff;
+
+}
+
+header .navegacao-hearder {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.4rem;
+
+}
+header .navegacao-hearder li a {
+  padding: 10px;
+  color: #fff;
+  font-size: 1.6em;
+
+}
+header .navegacao-hearder li a:hover{
+justify-self: start;
+  color:#000;
+  border-radius: 100px;
+  border: 4px solid cyan;
+  background-color: aliceblue;
+}
+
+/*DOWNLOAD CV SECAO*/
+
+.section-cv {
+  animation: inicializar 0.7s forwards;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.section-cv div {
+  font-family: "Tektur", cursive;
+  margin-top: 50px;
+  align-self: start;
+  display: grid;
+  gap: 30px;
+  font-size: 1.5rem;
+  padding: 150px;
+}
+.section-cv div h2 {
+  font-weight: 600;
+  display: grid;
+}
+.section-cv div p {
+  font-weight: 600;
+  display: grid;
+  color: #fff;
+}
+.section-cv div a {
+  justify-self: start;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.section-cv div a:hover {
+  border: 2px solid cyan;
+}
+.section-cv img {
+  border-radius: 25%;
+  max-width: 100%;
+  padding: 100px;
+}
+@keyframes inicializar {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*SEÇÃO PRINCIPAL SOBRE MIM*/
+
+main {
+  background-color: #111;
+  color: white;
+  border-radius: 50px;
+}
+main .sobre {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.sobre_titulo {
+  margin: 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+  color: #fff;
+}
+.sobre_titulo h1 {
+  font-family: "Roboto Mono", monospace;
+  font-family: "Tektur", cursive;
+  font-size: 2.5rem;
+  color: aqua;
+  margin-bottom: 40px;
+}
+.sobre_titulo p{
+    color: antiquewhite;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.sobre_titulo div{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.sobre_titulo span{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    background-color: aqua;
+}
+
+.sobre img{
+    animation: ladoSecao .5s ease-in-out forwards;
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 100%;
+    border-radius:50%;
+    filter: blur(0);
+}
+
+.sobre img:hover{
+    transition: .5s ease-in;
+    filter: blur(2px);
+}
+
+.sobre_conteudo{
+    animation: sobeSecao .6s ease-in-out forwards;
+    grid-column: 2/-1;
+    display: grid;
+    color: #707070;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobre_text{
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.sobre_text h1{
+    font-size: 2.3rem;
+    color: #fff;
+    grid-column: 1/-1;
+}
+.sobre_text h1::after{
+    background-color: aqua;
+    height: 6px;
+    width: 60px;
+    margin: 20px 0px;
+    content: '';
+    display: block;
+    border-radius: 5px;
+
+}
+.sobre_text p{
+    font-size: 1.3rem;
+    grid-column: 1/1;
+        
+}
+.sobre_info{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+}
+
+.sobre_info i {
+    color: aqua;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+.sobre_info p{
+    font-size: 1.1rem;
+}
+
+@keyframes sobeSecao {
+    from{
+        transform: translate3d(60px,0,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+    
+}
+@keyframes ladoSecao {
+    from{
+        transform: translate3d(-60px,0,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+    
+}
+
+
+/*SEÇÃO SERVICES*/
+.services{
+  background-color:  #151515;
+  margin-top: -30px;
+  padding: 60px;
+  border-radius: 50px;
+  margin-top: 30px;
+
+}
+.my_services {
+  padding: 50px;
+  color:antiquewhite;
+  font-size: 1rem;
+
+ }
+ .my_services ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+
+ }
+ .my_services ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  max-width: 300px;
+  height: 300px;
+  align-content: center;
+  background-color: #222;
+  border-radius: 30px;
+  border: 3px solid aqua;
+
+ }
+ .my_services ul li i {
+    color: aqua;
+    font-size: 2.7rem;
+ }
+ .my_services ul li a {
+  color: aqua;
+  border:3px solid aqua;
+  border-radius: 30px;
+  padding:10px;
+  display: block;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+@media (max-width:992px) {
+  .section-cv img{
+    display: none;
+    grid-column: 1/-1;
+  }
+  .section-cv div{
+    grid-column: 1/-1;
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+
+
+  header .navegacao-hearder{
+    display: none;
+  }
+
+  header i{
+    color: aqua;
+    font-size: 4rem;
+    margin: 30px;
+  }
+  header h1 {
+    color: rgb(41, 223, 223);
+    font-size: 3rem;
+  }
+
+}
+
+
+
+
+@media (max-width:992px) {
+    .sobre img{
+      grid-column: 1/-1;
+      justify-self: center;
+      border-radius: 10%;
+    }
+    .sobre_conteudo{
+      grid-column: 1/-1;
+    }
+  
+}
+
+
+
