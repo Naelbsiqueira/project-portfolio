@@ -15,7 +15,10 @@ function escrevendoLetra() {
 
 const ativaMenu = document.querySelector('.fa-bars');
 
+const navmenu = document.querySelector('header .navegacao-hearder')
+
 
 ativaMenu.addEventListener('click', ()=>{
     ativaMenu.classList.toggle('fa-x')
+    navmenu.classList.toggle('ativado')
 })

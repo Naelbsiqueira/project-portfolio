@@ -33,23 +33,34 @@ header span {
 
 header .navegacao-hearder {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 
 }
+
 header .navegacao-hearder li a {
-  padding: 10px;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.3em;
+  width: 0px;
+  height: 0px;
 
 }
-header .navegacao-hearder li a:hover{
-justify-self: start;
-  color:#000;
-  border-radius: 100px;
-  border: 4px solid cyan;
-  background-color: aliceblue;
+header .navegacao-hearder li a::after {
+  content: '';
+  width: 10px;
+  height: 0px;
+  display: block;
+  border-bottom: 4px solid transparent;
+  transition: .7s;
+}
+header .navegacao-hearder li a:hover::after{
+  width: 100%;
+  height: 0px;
+  padding: 0px;
+  border: 5px solid cyan;
+  border-radius: 30px;
+
 }
 
 /*DOWNLOAD CV SECAO*/
@@ -347,18 +358,39 @@ main .sobre {
 @media (max-width:992px) {
   .section-cv img{
     display: none;
-    grid-column: 1/-1;
+  
   }
   .section-cv div{
     grid-column: 1/-1;
     margin-top: -50px;
     margin-left: -30px;
   }
+  header{
+    justify-content: space-around;
+    padding: 30px 70px;
+  }
 
 
   header .navegacao-hearder{
-    display: none;
+    display:none;
   }
+  header .navegacao-hearder.ativado{
+    background:linear-gradient(rgba(43,42,42,0.176), rgba(46,46,46,0.724));
+    position:absolute;
+    display: grid;
+    top: 50px;
+    color: white;
+    z-index: 1;
+    padding: 30px;
+    font-size: 1.5rem;
+    border-radius: 0 0 30px 30px;
+    right: 20px;
+    animation: sobeSecao .8s ease-in-out;
+
+  }
+
+  
+
 
   header i{
     color: aqua;
