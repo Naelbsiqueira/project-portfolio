@@ -403,8 +403,14 @@ main .sobre {
 }
 .resume_generic .experence_content div{
   background-color: #222;
+  animation: ladoSecao .6s ease-in-out forwards;
+  display: none;
   padding: 30px;
   position: relative;
+}
+.resume_generic .experence_content div.ativo{
+  display: block;
+
 }
 .resume_generic .experence_content div::before{
   content: '';
@@ -429,6 +435,9 @@ main .sobre {
   margin: 10px 0px;
   font-size: 1.5rem;
 }
+.experence_content ul li.ativo{
+  color: #dc3545;
+}
 
 
 /*CURSO E DIPLOMAS*/
@@ -436,6 +445,8 @@ main .sobre {
 .resume_generic .education_content div{
   background-color: #222;
   padding: 30px;
+  display: none;
+  animation: ladoSecao .7s ease-in-out forwards;
   position: relative;
 }
 .education_content ul {
@@ -471,7 +482,13 @@ main .sobre {
   margin: 10px 0px;
   font-size: 1.5rem;
 }
+.education_content ul li.ativo{
+  color: #dc3545;
+}
+.resume_generic .education_content div.ativo{
+  display: block;
 
+}
 
 
 
