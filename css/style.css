@@ -490,13 +490,70 @@ main .sobre {
 
 }
 
+/*CURSOS E SKILLS*/
 
+.curses{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: start;
+  padding: 30px;
+  gap: 30px;
+  justify-content: center;
+}
+.my_skill{
+  display: grid;
+}
+.my_skill h2{
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 255, 0.548);
+  font-size: 1.5rem;
+  font-family: "Tektur", cursive;
+  margin-bottom: 30px;
+  justify-self: start;
+}
+.my_skill h2 i {
+  padding-right: 10px ;
+}
+.skill_content{
+  font-size: 1.5rem;
+  grid-column:1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  background-color: #222;
+  padding: 15px;
 
+}
+.skill_content h3{
+  font-size: 1.75rem;
+  justify-content: center;
+}
+.skill_content h3 i{
+  font-size: 3.5rem;
+  color: aqua;
+  gap: 10px;
+  padding-right: 30px;
 
+}
+.skill_content ul{
+  display: flex;
+}
 
+/*FUN FACTS*/
 
+.funfacts{
+  grid-column: 3/-1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr  ;
+}
 
-
+.funfacts h2{
+  grid-column: 1/-1;
+  padding: 10px 30px;
+}
 
 
 
