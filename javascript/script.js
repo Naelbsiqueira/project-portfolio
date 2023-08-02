@@ -87,7 +87,7 @@ const bottonAll = document.querySelectorAll('.projects_models .all');
 function removeClick(index){
   bottonGeneral.forEach((item)=>{
     item.classList.remove('ativo');
-  });
+  })
   bottonGeneral[index].classList.add('ativo');
 }
 bottonGeneral.forEach((event,index)=>{
