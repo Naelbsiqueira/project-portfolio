@@ -521,7 +521,7 @@ main .sobre {
 }
 .skill_content{
   font-size: 1.5rem;
-  grid-column:1/2;
+  grid-column:1/-1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 10px;
@@ -530,7 +530,7 @@ main .sobre {
 
 }
 .skill_content h3{
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   justify-content: center;
 }
 .skill_content h3 i{
@@ -546,12 +546,18 @@ main .sobre {
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,0.3);
   border-radius: 15px;
+  margin-left: 30px;
+  
 }
 .box_circle svg{
   width: 100px;
   height: 100px;
-  position: relative;
+  
 }
+.box:hover{
+  box-shadow: 2px -3px rgba(0, 255, 255, 0.568);
+}
+
 circle{
   width: 100px;
   height: 100px;
@@ -560,6 +566,7 @@ circle{
   stroke-width:7px;
   stroke-dasharray: 250;
   stroke-dashoffset: 250;
+  
 }
 circle:nth-child(1){
   stroke-dashoffset: 0;
@@ -570,20 +577,32 @@ circle:nth-child(1){
   stroke:coral;
 }
 #css{
-  stroke-dashoffset:calc(250 - 175.7);
+  stroke-dashoffset:calc(250 - 75);
   stroke:#0870C2;
 }
 #javascript{
-  stroke-dashoffset:calc(250 - 175.7);
+  stroke-dashoffset:calc(250 - 37.5);
   stroke:#E7A630;
 }
 #kotlin{
-  stroke-dashoffset:calc(250 - 175.7);
+  stroke-dashoffset:calc(250 - 25);
   stroke:#C414E2;
 }
 #mysql{
-  stroke-dashoffset:calc(250 - 175.7);
+  stroke-dashoffset:calc(250 - 70);
   stroke:#08668e;
+}
+#git{
+  stroke-dashoffset:calc(250 - 125);
+  stroke:#E84D31;
+}
+#python{
+  stroke-dashoffset:calc(250 - 125);
+  stroke:#F7C41C;
+}
+#php{
+  stroke-dashoffset:calc(250 - 100);
+  stroke:#7377ad;
 }
 .skill_content ul{
   display: flex;
@@ -913,7 +932,7 @@ footer .footer_comercial{
 
   }
   .skill_content h3 {
-   font-size: 2.5rem;
+   font-size: 2.0rem;
   }
    
 }
