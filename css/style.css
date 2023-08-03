@@ -539,9 +539,68 @@ main .sobre {
   padding-right:30px;
 
 }
+.box{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
+}
+.box_circle svg{
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+circle{
+  width: 100px;
+  height: 100px;
+  fill:none;
+  stroke:black;
+  stroke-width:7px;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+}
+circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke: #707070;
+}
+#html{
+  stroke-dashoffset:calc(250 - 175.7);
+  stroke:coral;
+}
+#css{
+  stroke-dashoffset:calc(250 - 175.7);
+  stroke:#0870C2;
+}
+#javascript{
+  stroke-dashoffset:calc(250 - 175.7);
+  stroke:#E7A630;
+}
+#kotlin{
+  stroke-dashoffset:calc(250 - 175.7);
+  stroke:#C414E2;
+}
+#mysql{
+  stroke-dashoffset:calc(250 - 175.7);
+  stroke:#08668e;
+}
 .skill_content ul{
   display: flex;
 }
+.number{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Tektur", cursive;
+}
+
 
 /*FUN FACTS*/
 
