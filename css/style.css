@@ -267,7 +267,7 @@ div .sobre_text p{
 }
 
 
-/*SEÇÃO SERVICES*/
+/*SEÇÃO SERVICES PROJECTS*/
 .services{
   background-color:  #151515;
   margin-top: -30px;
@@ -283,7 +283,9 @@ div .sobre_text p{
 
  }
  .my_services ul{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
