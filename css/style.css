@@ -797,7 +797,17 @@ footer .footer_comercial{
 
 
 /*RESPONSIVIDADE*/
-@media (max-width:992px) {
+@media (max-width: 600px){
+  .my_services ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+   }
+}
+
+@media screen and (max-width:992px) {
   .section-cv img{
     display: none;
   
@@ -844,13 +854,17 @@ footer .footer_comercial{
     color: rgb(41, 223, 223);
     font-size: 3rem;
   }
+}
 
-@media (max-width:992px) {
+
+
+@media screen and (max-width: 992px) {
     .sobre img{
       grid-column: 1/-1;
       justify-self: center;
-      border-radius: 10%;
+      border-radius: 10px;
     }
+    
     .sobre_conteudo{
       grid-column: 1/-1;
     }
@@ -871,11 +885,10 @@ footer .footer_comercial{
       justify-content: center;
       size:1rem ;
      }
-
-  
 }
 
-@media (max-width: 1090px) {
+
+@media screen and  (max-width: 1090px) {
   .resume_generic .experence_content, .education_content{
      justify-self: center;
      grid-column: 1/-1;
@@ -945,34 +958,3 @@ footer .footer_comercial{
   }
    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
