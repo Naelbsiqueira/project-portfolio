@@ -582,6 +582,10 @@ circle:nth-child(1){
   stroke-dashoffset:calc(250 - 100);
   stroke:#7377ad;
 }
+#java{
+  stroke-dashoffset:calc(250 - 125);
+  stroke:blue;
+}
 .skill_content ul{
   display: flex;
 }
