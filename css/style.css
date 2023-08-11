@@ -157,7 +157,13 @@ main .sobre {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     position: relative;
+    
 }
+div .sobre_text p{
+  text-align: justify;
+  text-indent: 80px;
+}
+
 .sobre_titulo div{
     display: flex;
     gap: 40px;
