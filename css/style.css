@@ -952,12 +952,23 @@ footer .footer_comercial{
     display: grid;
     grid-template-columns: 1fr;
     text-align: justify;
+    border: solid 1px aqua;
+    border-radius: 30px;
+    padding: 30px;
    }
     .projects_models ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
   
    }
+   .section-cv div {
+    margin-top: 10px;
+    align-self: center;
+    text-align: start;
+    gap: 20px;
+    font-size: 1.5rem;
+    padding: 50px
 }
    
+}
 }
