@@ -100,19 +100,20 @@ function showLista(lista, botton = "all"){
       lista.forEach((item)=>{
         item.classList.remove('ativo');
       })
-      if(botton == 'design'){
+      if(botton == 'mobile_developer'){
          lista[0].classList.add('ativo');
          lista[1].classList.add('ativo');
+         lista[2].classList.add('ativo');
+         lista[3].classList.add('ativo');
       }
-      if(botton == 'graphic'){
-        lista[2].classList.add('ativo');
-        lista[3].classList.add('ativo');
+      if(botton == 'study'){
+        lista[4].classList.add('ativo');
+        lista[5].classList.add('ativo');
         }
       if(botton == 'website'){
-      lista[4].classList.add('ativo');
-      lista[5].classList.add('ativo');
       lista[6].classList.add('ativo');
       lista[7].classList.add('ativo');
+
       }
       if(botton == 'all'){
         lista[0].classList.add('ativo');
@@ -136,11 +137,11 @@ bottonGeneral.forEach((item)=>{
     if(currentBotton.classList.contains('all')){
         showLista(listAll)
     }
-    if(currentBotton.classList.contains('design')){
-        showLista(listAll,"design")
+    if(currentBotton.classList.contains('mobile_developer')){
+        showLista(listAll,"mobile_developer")
     }
-  if(currentBotton.classList.contains('graphic')){
-        showLista(listAll, "graphic")
+  if(currentBotton.classList.contains('study')){
+        showLista(listAll, "study")
     }
   if(currentBotton.classList.contains('website')){
         showLista(listAll, "website")
