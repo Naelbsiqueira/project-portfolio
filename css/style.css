@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 body {
-  max-width: 80vw;
+  width: 80vw;
   margin: 0 auto;
   background-color: #000;
 }
@@ -987,6 +987,9 @@ footer .footer_comercial{
   .sobre_conteudo{
     word-break: break-all;
 
+  }
+  body {
+    width: 100vw;
   }
    
 }
