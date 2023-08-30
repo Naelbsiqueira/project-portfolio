@@ -997,6 +997,11 @@ footer .footer_comercial{
   body {
     width: 100vw;
   }
+  
+.resume_generic {
+  padding: 0px;
+  gap: 10px;
+}
    
 }
 
