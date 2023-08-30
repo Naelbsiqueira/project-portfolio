@@ -982,6 +982,10 @@ footer .footer_comercial{
   align-self: center;
   text-align: center;
   }
+  .sobre_conteudo{
+    word-break: break-all;
+
+  }
    
 }
 
