@@ -942,6 +942,11 @@ footer .footer_comercial{
       justify-content: center;
       size:1rem ;
      }
+     .sobre_conteudo{
+      word-break: break-all;
+      padding: 0px;
+  
+    }
 }
   @media screen and (max-width: 600px){
   .my_services ul {
@@ -986,6 +991,7 @@ footer .footer_comercial{
   }
   .sobre_conteudo{
     word-break: break-all;
+    padding: 0px;
 
   }
   body {
