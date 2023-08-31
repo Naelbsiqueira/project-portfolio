@@ -702,9 +702,10 @@ circle:nth-child(1){
   grid-template-columns: repeat(4,1fr);  
 }
 .projects_armazenamento ul li{
-  display: none;
-  max-width: 100px;
-  height: 100px;
+  max-width: 100%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
 }
 .projects_armazenamento ul li.ativo{
   display: block;
