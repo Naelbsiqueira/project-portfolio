@@ -271,23 +271,20 @@ div .sobre_text p{
 /*SEÇÃO SERVICES PROJECTS*/
 .services{
   background-color:  #151515;
-  margin-top: -30px;
-  padding: 60px;
+  padding: 100px;
   border-radius: 50px;
   margin-top: 30px;
-
 }
 .my_services {
-  padding: 50px;
+  padding: 100px;
   color:antiquewhite;
   font-size: 1rem;
-
  }
  .my_services ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
-  gap: 40px;
+  gap:40px;
   align-items: center;
   justify-content: center;
 
