@@ -83,6 +83,10 @@ const listAll = document.querySelectorAll('.projects_armazenamento ul li');
 const bottonGeneral = document.querySelectorAll('.projects_models ul li');
 const bottonAll = document.querySelectorAll('.projects_models .all');
 
+listAll.forEach((item)=>{
+  item.classList.add('ativo');
+})
+
 
 function removeClick(index){
   bottonGeneral.forEach((item)=>{
@@ -127,9 +131,6 @@ function showLista(lista, botton = "all"){
       }
 
 }
-
-
-
 
 bottonGeneral.forEach((item)=>{
   item.addEventListener('click', (e)=>{
