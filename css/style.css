@@ -946,6 +946,13 @@ footer .footer_comercial{
       padding: 0px;
   
     }
+    .projects_armazenamento ul{
+      display: grid;
+      margin-top: 50px;
+      gap: 30px;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr ;  
+    }
 }
   @media screen and (max-width: 600px){
   .my_services ul {
@@ -1000,6 +1007,14 @@ footer .footer_comercial{
 .resume_generic {
   padding: 0px;
   gap: 10px;
+}
+.projects_armazenamento ul{
+  display: grid;
+  margin-top: -50px;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr ;  
 }
    
 }
