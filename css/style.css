@@ -707,6 +707,7 @@ circle:nth-child(1){
   display: none;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .projects_armazenamento ul li.ativo{
   display: block;
@@ -951,7 +952,8 @@ footer .footer_comercial{
       margin-top: 50px;
       gap: 30px;
       justify-content: center;
-      grid-template-columns: 1fr 1fr ;  
+      grid-template-columns: 1fr 1fr;
+      text-align: center;  
     }
 }
   @media screen and (max-width: 600px){
